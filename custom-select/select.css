@@ -1,0 +1,49 @@
+.select {
+	width: 300px;
+}
+
+.select__button {
+	position: relative;
+	width: 100%;
+	text-align: left;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #e1e1e1;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.select__button::after {
+	position: absolute;
+	content: "";
+	top: 15px;
+	right: 10px;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #000;
+	transform: rotate(225deg);
+	border-bottom: none;
+	border-right: none;
+}
+
+.select__button--opened::after {
+	transform: rotate(45deg);
+}
+
+.select__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	box-shadow: 3px 3px 5px 0 #e1e1e1;
+}
+
+.select__item {
+	padding: 10px;
+	border: 1px solid #e1e1e1;
+}
+
+.select__item:hover {
+	background-color: #FFE4C4;
+}
